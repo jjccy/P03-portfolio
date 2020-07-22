@@ -1,0 +1,108 @@
+#intro {
+
+}
+
+#slogan {
+  display: inline-block;
+  position: absolute !important;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#slogan > code {
+  text-align: left !important;
+
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+  line-height: 1.6em;
+  font-size: 2rem;
+  font-weight: 300;
+
+  color: #ddd;
+}
+
+section {
+  margin-bottom: 15em;
+}
+
+h1 {
+  margin-left: 7vw;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+#project {
+  margin-top: 100vh;
+  position: relative;
+}
+
+.index-image-holder {
+  width: 100%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  position: relative;
+}
+
+.index-text-holder {
+  width: inherit;
+  height: inherit;
+  margin: auto;
+
+  position: relative;
+}
+
+.index-text-holder > .index-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #eee;
+  text-decoration: none;
+
+  bottom: 15vh;
+  left: 7vw;
+
+  position: absolute;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.index-text-holder > .index-title:hover,
+.index-text-holder > .index-title:active,
+.index-text-holder > .index-title:focus{
+  color: #333;
+  text-shadow: .05em .05em .07em #aaa;
+  text-decoration: none;
+}
+
+.project-description {
+  padding: 2em 7vw;
+}
+
+.project-description > p {
+  font-size: 1.2rem;
+}
+
+#about > .flex-box {
+  margin: 0 7vw;
+}
+
+#about > .flex-box > img{
+  width: 25vw;
+
+  margin-right: 7em;
+}
+
+#about > .flex-box > .flex-item-min > p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

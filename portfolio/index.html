@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Style Guide</title>
+    <title>Jimmy Chu</title>
     <!--
     Porfol styleguide io for Jimmy Chu
     Author Jimmy Chu
@@ -11,204 +11,111 @@
 
     <link rel="stylesheet" type = "text/css" href="css/normalize.css">
     <link rel="stylesheet" type = "text/css" href="css/main.css">
+    <link rel="stylesheet" type = "text/css" href="css/index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Style Guide</a>
-        </li>
-        <li>
-          <a href="wireframe.html">Wireframe</a>
-        </li>
-        <li>
-          <a href="content.html">Content</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- navgation bar start from here -->
+    <div id="navgation-bar" class="flex-box">
+      <nav class="flex-item-min flex-box" aria-label="left-part">
+        <a href="#" class="main-nav-link flex-item-min">Product</a>
+        <a href="#" class="main-nav-link flex-item-min">About</a>
+        <a href="#" class="main-nav-link flex-item-min">Contact</a>
+      </nav>
 
-    <!-- start body wrapper, limit width of the bady and keep in center -->
-    <div class="body-wrapper">
-      <h1>Style Guide</h1>
+      <span class="flex-item-max"></span>
 
-      <section id="style-guide">
-          <h2>Style guide and Pattern Library</h2>
+      <img src="img/logo.png" alt="logo" class="flex-item-min logo">
 
-          <h3 class="h3-heading" id="basic-interactive">Basic Interactive elements</h3>
+      <span class="flex-item-max"></span>
 
-          <ol>
+      <nav class="flex-item-min flex-box" aria-label="right-part">
+        <a href="https://www.facebook.com/jimmy.chu.526438/friends_all" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Facebook_5.svg" alt="fackbook icon">
+        </a>
+        <a href="https://github.com/jjccy" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Github_5.svg" alt="fackbook icon">
+        </a>
+        <a href="https://www.linkedin.com/in/jimmy-chu-4b9150188/" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Linkedin_5.svg" alt="fackbook icon">
+        </a>
+      </nav>
+    </div>
+    <!-- navgation bar ends here -->
 
-            <li>
-              <p>
-                an in-text link <a href="#" class="bE-link">in-text link</a><br>
-              </p>
-              <div class="code-holder">
-                <code>
-                  &lt;a href="#" class="bE-link"&gt;in-text link&lt;/a&gt;
-                </code>
-              </div>
-            </li>
-            <li>
-              <p>
-                Main nav link <br>
-              </p>
-              <div class="styleguide-main-nav-holder">
-                <a href="#" class="main-nav-link">Nav-Link</a>
-              </div>
-              <div class="code-holder">
-                <code>
-                  &lt;a href="#" class="main-nav-link"&gt;Nav-Link&lt;/a&gt;
-                </code>
-              </div>
-            </li>
-            <li>
-              <p>
-                call action button <button type="submit" name="submit" class="bE-button">Button</button>
-              </p>
-              <div class="code-holder">
-                <code>
-                  &lt;button type="submit" class="bE-button"&gt;Button&lt;/button&gt;
-                </code>
-              </div>
-            </li>
+    <div id="intro">
+      <div id="slogan">
+        <code>
+          if (TIRED) {                        <br>
+          &nbsp;&nbsp;  drink_Coffee();       <br>
+          }                                   <br>
+          else {                              <br>
+          &nbsp;&nbsp;  code();               <br>
+          }
+        </code>
+      </div>
+    </div>
 
-            <li>
-              <p>
-                a text input field, a label, a submit and reset button for forms
-              </p>
-              <form action="/button-type" class="bE-form">
-                <label for="name" class="bE-label">Name</label><br>
-                <input type="text" id="name" class="bE-input-text"><br>
-                <button type="reset" class="bE-button">Reset the form!</button><br>
-                <button type="submit" class="bE-button" disabled>Submit</button>
-              </form><br>
+    <!-- start project section -->
+    <section id="project">
+      <h1>Product</h1>
 
-              <div class="code-holder">
-                <code>
-                  &lt;form action="/button-type" class="bE-form"&gt;<br>
-                    &nbsp;&nbsp;&lt;label for="name" class="bE-label"&gt;Name&lt;/label&gt;&lt;br&gt;<br>
-                    &nbsp;&nbsp;&lt;input type="text" id="name" class="bE-input-text"&gt;&lt;br&gt;<br>
-                    &nbsp;&nbsp;&lt;button type="reset" class="bE-button"&gt;Reset the form!&lt;/button&gt;&lt;br&gt;<br>
-                    &nbsp;&nbsp;&lt;button type="submit" class="bE-button" disabled&gt;Submit&lt;/button&gt;<br>
-                  &lt;/form&gt;&lt;br&gt;
-                </code>
-              </div>
-            </li>
+      <div class="index-image-holder" style="background-image: url('img/birds-of-feather2.png');">
 
-          </ol>
+        <div class="index-text-holder">
+          <a class="index-title" href="#">Birds of Feather</a>
+        </div>
+      </div>
 
+      <div class="project-description">
+        <p>
+          A team VR project. Our goal is by using this VR experience, we could remind people how pollution is harming our environment.
+        </p>
+      </div>
 
-          <h3 class="h3-heading" id="text-style">Text styling</h3>
+      <div class="index-image-holder" style="background-image: url('img/birds-of-feather.png');">
 
-          <ol>
+        <div class="index-text-holder">
+          <a class="index-title" href="#">Temp</a>
+        </div>
+      </div>
 
-            <li>
-              <p>
-                Three levels of heading
-              </p>
-              <h1>h1 heading</h1>
-              <h2>h2 heading</h2>
-              <h3>h3 heading</h3>
-              <h4>h4 heading</h4>
+      <div class="project-description">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim ut. Integer enim neque volutpat ac tincidunt. Sed turpis tincidunt id aliquet risus. Ullamcorper sit amet risus nullam. Nullam eget felis eget nunc lobortis mattis aliquam. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.
+        </p>
+      </div>
 
-              <div class="code-holder">
-                <code>
-                  &lt;h1&gt;h1 heading&lt;/h1&gt;<br>
-                  &lt;h2&gt;h2 heading&lt;/h2&gt;<br>
-                  &lt;h3&gt;h3 heading&lt;/h3&gt;<br>
-                  &lt;h4&gt;h4 heading&lt;/h4&gt;
-                </code>
-              </div>
-            </li>
+    </section>
+    <!-- end project section -->
 
-            <li>
-              <p>
-                A paragraph
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </li>
+    <section id="about">
+      <h1>About</h1>
 
-            <li>
-              <p>
-                bulletted lists
-              </p>
-                <ul class="clear-list">
-                  <li>
-                    bulletted list
-                  </li>
-                  <li>
-                    bulletted list
-                  </li>
-                  <li>
-                    bulletted list
-                  </li>
-                </ul><br>
+      <div class="flex-box">
+        <img src="img/maybe profile pic.jpg" alt="self picture" class="flex-item-min">
+        <div class="flex-item-min">
+          <p>
+            hello!
+          </p>
+          <p>
+            I'm Jimmy, a Programmer / Game Designer. <br>
+            Currently I'm a third-year Interactive Arts & Technology (SIAT) student from Simon Fraser University. <br>
+            I enjoy to create everything from small android app to big complex game design. <br>
+            If you are interesting about my project, you could reach me by
+            <a href="mailto: jimmychu82@gmail.com" class="bE-link ">jimmychu82.gmail.com</a>.
+          </p>
+        </div>
+      </div>
 
-              <div class="code-holder">
-                <code>
-                  &lt;ul class="clear-list"&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;bulletted list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                  &lt;/ul&gt;<br>
-                </code>
-              </div>
-            </li>
+    </section>
 
-            <li>
-              <p>
-                numbered lists
-              </p>
-                <ol class="clear-list">
-                  <li>
-                    numbered list
-                  </li>
-                  <li>
-                    numbered list
-                  </li>
-                  <li>
-                    numbered list
-                  </li>
-                </ol><br>
+    <section>
 
-              <div class="code-holder">
-                <code>
-                  &lt;ol class="clear-list"&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&lt;li&gt;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;numbered list<br>
-                    &nbsp;&nbsp;&lt;/li&gt;<br>
-                  &lt;/ol&gt;<br>
-                </code>
-              </div>
-            </li>
+    </section>
 
-          </ol>
-
-        </section><!-- end of style-guide section -->
-
-    </div> <!-- end body-wrapper -->
-
-
-
-    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
   </body>
-
 </html>
