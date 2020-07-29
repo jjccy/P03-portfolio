@@ -59,7 +59,7 @@ h1 {
 .index-text-holder > .index-title {
   font-size: 4.5rem;
   font-weight: 800;
-  color: #eee;
+  color: #ddd;
   text-decoration: none;
 
   -webkit-transition: all .3s ease-in-out;
@@ -72,9 +72,8 @@ h1 {
 .index-text-holder > .index-title:hover,
 .index-text-holder > .index-title:active,
 .index-text-holder > .index-title:focus{
-  color: #333;
-  text-shadow: .05em .05em .07em #aaa;
-  text-decoration: none;
+  color: #fff;
+  text-shadow: .05em .05em .07em #777;
 }
 
 .project-description {
