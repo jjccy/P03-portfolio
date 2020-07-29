@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Mood Converter</title>
+    <!--
+    Portfolio project io for Jimmy Chu
+    Author Jimmy Chu
+    With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
+    -->
+
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css">
+    <link rel="stylesheet" type = "text/css" href="css/main.css">
+    <link rel="stylesheet" type = "text/css" href="css/project.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- navgation bar start from here -->
+    <div id="navgation-bar" class="flex-box">
+      <nav class="flex-item-min flex-box" aria-label="left-part">
+        <a href="index.html#project" class="main-nav-link flex-item-min">Product</a>
+        <a href="index.html#about" class="main-nav-link flex-item-min">About</a>
+        <!-- <a href="index.html#contact" class="main-nav-link flex-item-min">Contact</a> -->
+      </nav>
+
+      <a href="index.html" class="flex-item-max flex-box logo" id="logo-link">
+        <span class="flex-item-max"></span>
+
+        <div class="flex-item-min">
+          <img src="img/logo.png" alt="logo" >
+        </div>
+        <p class="flex-item-min">
+          Jimmy Chu
+        </p>
+
+        <span class="flex-item-max"></span>
+      </a>
+
+      <nav class="flex-item-min flex-box" aria-label="right-part">
+        <a href="https://www.facebook.com/jimmy.chu.526438/friends_all" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Facebook_5.svg" alt="fackbook icon">
+        </a>
+        <a href="https://github.com/jjccy" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Github_5.svg" alt="fackbook icon">
+        </a>
+        <a href="https://www.linkedin.com/in/jimmy-chu-4b9150188/" target="_blank" class="main-nav-icon flex-item-min">
+          <img src="img/Linkedin_5.svg" alt="fackbook icon">
+        </a>
+      </nav>
+    </div>
+    <!-- navgation bar ends here -->
+
+    <div class="full-img-background" style="background-image: url('img/imc/imc-cover.jpg');">
+
+      <h1 class="title">Image Mood Converter</h1>
+    </div>
+
+    <!-- start content wrapper -->
+    <div class="content-wrapper">
+
+
+      <div class="project-info flex-box">
+
+        <div class="role flex-item-min">
+          <h2>Role</h2>
+
+          <p>
+            Programmer <br> Debuger <br> Researcher
+          </p>
+
+          <h2>Team</h2>
+
+          <p>
+            Ben Wong <br>Jimmy Chu
+          </p>
+        </div>
+
+        <div class="description flex-item-min">
+          <h2>Project overview</h2>
+          <div class="aspect-ratio">
+            <iframe
+            src="https://www.youtube.com/embed/kKqnCmcjQHU"
+            allowfullscreen="allowfullscreen"
+            mozallowfullscreen="mozallowfullscreen"
+            msallowfullscreen="msallowfullscreen"
+            oallowfullscreen="oallowfullscreen"
+            webkitallowfullscreen="webkitallowfullscreen">
+            </iframe>
+          </div>
+
+          <h2>Project Description</h2>
+
+          <p>
+            Our goal in our Course Project is to explore the use of color in
+            changing the emotional and mood of a particular image. Through this,
+            we hope to achieve a level of modification such that the supplied images,
+            if they are rather gloomy, with grey skies or generally less appealing colors,
+            can be modified to be warmer and brighter.
+          </p>
+          <p>
+            We notice that this can be done in Photoshop or other image editing programs,
+            but the problem with those is that the emotional/mood color shift of
+            those programs require the manual brushing from the user.
+            In this program, we wish to automate it so that the user can color
+            shift many images in a short period of time.
+          </p>
+
+        </div> <!-- end description -->
+
+      </div> <!-- end project info -->
+
+
+
+      <h1>Process</h1>
+
+      <h1>Final Result</h1>
+
+      <!-- start carousel section -->
+      <!--
+      the idea for this carousel is W3 school
+      How TO - Slideshow
+      https://www.w3schools.com/howto/howto_js_slideshow.asp
+      -->
+
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/imc/result1.png" alt="result image 1">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/imc/result2.png" alt="result image 2">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/imc/result3.png" alt="result image 3">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/imc/result4.png" alt="result image 4">
+          <!-- <div class="text">Caption Four</div> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <!-- end carousel section -->
+
+      <h1>Reflection</h1>
+
+
+    </div>
+    <!-- end content wrapper -->
+
+
+    <!-- start of projects section -->
+
+    <section class="projects-section">
+      <h1>Other projects</h1>
+
+      <div id="elem" class="flex-box">
+
+        <div id="outer" class="flex-item-max">
+          <div id="inner">
+
+            <div class="project-item">
+              <div class="flex-box">
+                <a href="birds-of-feather.html" class="flex-item-min">
+                  <img src="img/bof/birds-of-feather2-min.png" alt="bird of feather">
+                </a>
+
+                <h3>Birds of Feather</h3>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="flex-box">
+                <a href="image-mood-converter.html" class="flex-item-min">
+                  <img src="img/imc/imc-cover-min.jpg" alt="image mood converter">
+                </a>
+
+                <h3>Image Mood Converter</h3>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <div class="flex-box">
+                <a href="index.html" class="flex-item-min">
+                  <img src="img/birds-of-feather.png" alt="temp">
+                </a>
+
+                <h3>Temp</h3>
+              </div>
+            </div>
+
+
+          </div> <!-- end of inner -->
+        </div> <!-- end of outer -->
+
+      </div> <!-- end of elem -->
+    </section>
+
+    <!-- end of project section -->
+
+    <!-- blinking hint -->
+    <div id = "hint">
+      <p id="hint-i">&#10095;</p>
+    </div>
+
+    <!-- back to top button -->
+    <a id="back2Top" href="#">&#10148;</a>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script/horizontal-scroll.js"></script>
+    <script src="script/carousel.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>

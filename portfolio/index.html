@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Jimmy Chu</title>
     <!--
-    Porfol styleguide io for Jimmy Chu
+    Portfolio landing page io for Jimmy Chu
     Author Jimmy Chu
     With a lot of help for html entities and css elements from W3schools.com, CSS tricks, stack overflow
     -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" type = "text/css" href="css/main.css">
     <link rel="stylesheet" type = "text/css" href="css/index.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -21,16 +21,23 @@
     <!-- navgation bar start from here -->
     <div id="navgation-bar" class="flex-box">
       <nav class="flex-item-min flex-box" aria-label="left-part">
-        <a href="#" class="main-nav-link flex-item-min">Product</a>
-        <a href="#" class="main-nav-link flex-item-min">About</a>
-        <a href="#" class="main-nav-link flex-item-min">Contact</a>
+        <a href="index.html#project" class="main-nav-link flex-item-min" id="product-link">Product</a>
+        <a href="index.html#about" class="main-nav-link flex-item-min" id="about-link">About</a>
+        <!-- <a href="index.html#contact" class="main-nav-link flex-item-min" id="contact-link">Contact</a> -->
       </nav>
 
-      <span class="flex-item-max"></span>
+      <a href="index.html" class="flex-item-max flex-box logo" id="logo-link">
+        <span class="flex-item-max"></span>
 
-      <img src="img/logo.png" alt="logo" class="flex-item-min logo">
+        <div class="flex-item-min">
+          <img src="img/logo.png" alt="logo" >
+        </div>
+        <p class="flex-item-min">
+          Jimmy Chu
+        </p>
 
-      <span class="flex-item-max"></span>
+        <span class="flex-item-max"></span>
+      </a>
 
       <nav class="flex-item-min flex-box" aria-label="right-part">
         <a href="https://www.facebook.com/jimmy.chu.526438/friends_all" target="_blank" class="main-nav-icon flex-item-min">
@@ -49,11 +56,11 @@
     <div id="intro">
       <div id="slogan">
         <code>
-          if (TIRED) {                        <br>
+          if (<strong>TIRED</strong>) {                        <br>
           &nbsp;&nbsp;  drink_Coffee();       <br>
           }                                   <br>
           else {                              <br>
-          &nbsp;&nbsp;  code();               <br>
+          &nbsp;&nbsp;  <i>code();</i>               <br>
           }
         </code>
       </div>
@@ -63,35 +70,45 @@
     <section id="project">
       <h1>Product</h1>
 
-      <div class="index-image-holder" style="background-image: url('img/birds-of-feather2.png');">
+      <div class="full-img-background" style="background-image: url('img/bof/birds-of-feather2.png');">
 
         <div class="index-text-holder">
-          <a class="index-title" href="#">Birds of Feather</a>
+          <a class="index-title" href="birds-of-feather.html">Birds of Feather</a>
+
+          <div class="project-description">
+            <p>
+              "Birds of Feather" is a one month team VR project with Unity from class IAT 445: Immersive Environment.
+              The goal of this project is to raise awareness of protecting our environment.
+              <a class="bE-link" href="birds-of-feather.html">Read more</a>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="project-description">
-        <p>
-          A team VR project. Our goal is by using this VR experience, we could remind people how pollution is harming our environment.
-        </p>
-      </div>
 
-      <div class="index-image-holder" style="background-image: url('img/birds-of-feather.png');">
+
+      <div class="full-img-background" style="background-image: url('img/imc/imc-cover.jpg');">
 
         <div class="index-text-holder">
-          <a class="index-title" href="#">Temp</a>
+          <a class="index-title" href="image-mood-converter.html">Image mood Converter</a>
+
+          <div class="project-description">
+            <p>
+              This project is to explore the use of color in changing the emotional and mood of
+              a particular image. Through this, we hope to achieve a level of modification such that the supplied images.
+              <a class="bE-link" href="image-mood-converter.html">Read more</a>
+            </P>
+          </div>
         </div>
       </div>
 
-      <div class="project-description">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim ut. Integer enim neque volutpat ac tincidunt. Sed turpis tincidunt id aliquet risus. Ullamcorper sit amet risus nullam. Nullam eget felis eget nunc lobortis mattis aliquam. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.
-        </p>
-      </div>
+
 
     </section>
     <!-- end project section -->
 
+
+    <!-- start about section -->
     <section id="about">
       <h1>About</h1>
 
@@ -102,20 +119,103 @@
             hello!
           </p>
           <p>
-            I'm Jimmy, a Programmer / Game Designer. <br>
+            I'm Jimmy, a Programmer / Game Developer. <br>
             Currently I'm a third-year Interactive Arts & Technology (SIAT) student from Simon Fraser University. <br>
             I enjoy to create everything from small android app to big complex game design. <br>
             If you are interesting about my project, you could reach me by
-            <a href="mailto: jimmychu82@gmail.com" class="bE-link ">jimmychu82.gmail.com</a>.
+            <a href="mailto:jimmychu82@gmail.com" class="bE-link ">jimmychu82.gmail.com</a>.
           </p>
+
+          <p id="contact-info">
+            Email: <a href="mailto:jimmychu82@gmail.com" class="bE-link">jimmychu82.gmail.com</a> <br>
+            Phone: <a href="tel:778-239-8999" class="bE-link">778-239-8999</a>
+          </p>
+
+          <div id="contact-buttom" class="flex-box">
+            <a href="https://www.facebook.com/jimmy.chu.526438/friends_all" target="_blank" class="main-nav-icon flex-item-min">
+              <img src="img/Facebook_5.svg" alt="fackbook icon">
+            </a>
+            <a href="https://github.com/jjccy" target="_blank" class="main-nav-icon flex-item-min">
+              <img src="img/Github_5.svg" alt="fackbook icon">
+            </a>
+            <a href="https://www.linkedin.com/in/jimmy-chu-4b9150188/" target="_blank" class="main-nav-icon flex-item-min">
+              <img src="img/Linkedin_5.svg" alt="fackbook icon">
+            </a>
+            <span class="flex-item-max"></span>
+          </div>
         </div>
       </div>
 
     </section>
+    <!-- end about section -->
 
-    <section>
 
-    </section>
 
+    <!-- start contact section -->
+    <!-- <section  id="contact">
+      <h1>Contact</h1>
+
+      <div id="contact-info">
+        <p>
+          Jimmy Chu
+        </p>
+        <p>
+          Email: <a href="mailto:jimmychu82@gmail.com" class="bE-link">jimmychu82.gmail.com</a>
+        </p>
+        <p>
+          Phone: <a href="tel:778-239-8999" class="bE-link">778-239-8999</a>
+        </p>
+      </div> -->
+
+
+
+      <!-- <form class="bE-form" action="mailto:jimmychu82@gmail.com" enctype="text/plain" class="bE-form">
+        <label for="name" class="bE-label">Your Name</label> <br>
+        <input type="text" name="name" id ="name" class="bE-input-text"> <br>
+
+        <label for="email" class="bE-label">Email Address</label> <br>
+        <input type="email" name="email" id ="email" class="bE-input-text"> <br>
+
+        <label for="phone" class="bE-label">Phone Number</label> <br>
+        <input type="tel" name="phone" id ="phone" class="bE-input-text"> <br>
+
+        <label for="name" class="bE-label">Enter Message:	</label> <br>
+        <textarea name="message" id ="message" class="bE-input-text"></textarea> <br>
+
+        <div id="form-button" class="flex-box">
+          <div class="flex-item-min">
+            jimmychu82@gmail.com
+          </div>
+
+          <a href="https://www.facebook.com/jimmy.chu.526438/friends_all" target="_blank" class="main-nav-icon flex-item-min">
+            <img src="img/Facebook_5.svg" alt="fackbook icon">
+          </a>
+          <a href="https://github.com/jjccy" target="_blank" class="main-nav-icon flex-item-min">
+            <img src="img/Github_5.svg" alt="fackbook icon">
+          </a>
+          <a href="https://www.linkedin.com/in/jimmy-chu-4b9150188/" target="_blank" class="main-nav-icon flex-item-min">
+            <img src="img/Linkedin_5.svg" alt="fackbook icon">
+          </a>
+
+          <span class="flex-item-max"></span>
+
+          <button type="submit" class="bE-button flex-item-min">Submit</button>
+        </div>
+
+      </form> -->
+
+    <!-- </section> -->
+    <!-- end contact section -->
+
+    <!-- blinking hint -->
+    <div id = "hint">
+      <p id="hint-i">&#10095;</p>
+    </div>
+
+    <!-- back to top button -->
+    <a id="back2Top" href="#">&#10148;</a>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>

@@ -18,9 +18,13 @@
   word-spacing: 0.02em;
   line-height: 1.6em;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 
   color: #ddd;
+}
+
+#slogan > code > strong{
+  color: rgba(219, 51, 39, 1);
 }
 
 section {
@@ -38,24 +42,18 @@ h1 {
   position: relative;
 }
 
-.index-image-holder {
-  width: 100%;
-  height: 100vh;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-
+.full-img-background {
   position: relative;
 }
 
 .index-text-holder {
-  width: inherit;
-  height: inherit;
+  width: 100%;
   margin: auto;
 
-  position: relative;
+  bottom: 15vh;
+  padding: 0 7vw;
+
+  position: absolute;
 }
 
 .index-text-holder > .index-title {
@@ -63,11 +61,6 @@ h1 {
   font-weight: 800;
   color: #eee;
   text-decoration: none;
-
-  bottom: 15vh;
-  left: 7vw;
-
-  position: absolute;
 
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -86,6 +79,8 @@ h1 {
 
 .project-description {
   padding: 2em 7vw;
+
+  text-shadow: .1em .1em .5em rgba(0, 0, 0, 1);
 }
 
 .project-description > p {
@@ -94,6 +89,8 @@ h1 {
 
 #about > .flex-box {
   margin: 0 7vw;
+
+  align-items:flex-end;
 }
 
 #about > .flex-box > img{
@@ -105,4 +102,60 @@ h1 {
 #about > .flex-box > .flex-item-min > p:first-child {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+#contact > h1 {
+}
+
+#contact-info {
+  font-size: 1rem;
+
+  opacity: .8;
+}
+
+#contact-buttom > .flex-item-min {
+  margin-right: .5em;
+}
+
+#contact > .bE-form {
+  position: absolute !important;
+
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  width: 50vw;
+}
+
+#contact > .bE-form > .bE-label {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+#contact > .bE-form > .bE-input-text {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 100;
+
+  margin-top: .3em;
+  margin-bottom: 1em;
+}
+
+#contact > .bE-form .bE-button {
+  /* font-size: 1.5rem; */
+}
+
+#contact > .bE-form > textarea {
+  height: 16em;
+
+  content: none;
+}
+
+#form-button > .flex-item-min:first-child {
+  color: #888;
+  font-size: .8rem;
+}
+
+#form-button > .flex-item-min {
+  margin: 0 .5em;
 }
