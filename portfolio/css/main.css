@@ -2,14 +2,19 @@
 .body-wrapper {
   max-width: 1350px;
   margin: auto;
+  margin-bottom: 8em;
+  padding: 0 5em;
   /* border: 1px solid black; */
 }
 
 .code-holder {
-  background-color: #ddd;
   padding: 1em 3em;
 
   margin: 1em 0 2.5em;
+
+  border: .1em solid white;
+
+  color: #eee;
 }
 
 .styleguide-main-nav-holder {
@@ -30,7 +35,7 @@ body{
   /*
   background-color: #222222;
   */
-  background-color: black !important;
+  background-color: #111 !important;
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important;
   scroll-behavior: smooth;
 }
@@ -185,6 +190,37 @@ ol.clear-list{
   background-attachment: fixed;
 
   position: relative;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer-nav > .flex-item-min {
+  margin: .7rem 2rem;
+  text-decoration: none;
+
+  color: #777;
+}
+
+.footer-nav > a:hover,
+.footer-nav > a:active,
+.footer-nav > a:focus {
+  color: #ddd;
+
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+footer p{
+  color: #555;
+  font-size: .9rem;
 }
 
 /* W3schools carousel */
@@ -398,38 +434,11 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   text-decoration: none;
 }
 
-/* footer */
-footer {
-  text-align: center;
-}
 
-.footer-nav > .flex-item-min {
-  margin: .7rem 2rem;
-  text-decoration: none;
-
-  color: #777;
-}
-
-.footer-nav > a:hover,
-.footer-nav > a:active,
-.footer-nav > a:focus {
-  color: #ddd;
-
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-}
-
-footer p{
-  color: #555;
-  font-size: .9rem;
-}
 
 /* hint */
 #hint{
-  position: absolute;
+  position: fixed;
   width: 100%;
   text-align: center;
   bottom: 3vh;
@@ -495,6 +504,7 @@ footer p{
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
+
 #back2Top:hover {
     /* color: #418ed1; */
     color: #337ab7;
@@ -504,4 +514,40 @@ footer p{
     -o-transform: scale(0.9) rotate(270deg);
     -ms-transform: scale(0.9) rotate(270deg);
     transform: scale(0.9) rotate(270deg);
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 25pt !important;
+  }
+
+  .full-img-background {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+    margin-top: 1.5em !important;
+  }
+
+  .footer-nav > .flex-item-min {
+    margin: .7rem 1rem;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .logo > p,
+  .logo > span {
+    display: none;
+  }
+
+  .main-nav-link {
+  }
+
+  .main-nav-icon {
+    margin: .2em;
+    display: none;
+  }
 }
