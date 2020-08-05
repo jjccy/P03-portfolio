@@ -167,13 +167,13 @@
 
       <div id="horizontal-images" class="flex-box">
         <div class="flex-item-min">
-          <img src="img/bof/bof-storyboard1-min.png" alt="project storyboard 1">
+          <img id="modal1" class="modalImage" onclick="modalClick(1)" src="img/bof/bof-storyboard1-min.png" alt="project storyboard 1">
         </div>
         <div class="flex-item-min">
-          <img src="img/bof/bof-storyboard2-min.png" alt="project storyboard 2">
+          <img id="modal2" class="modalImage" onclick="modalClick(2)" src="img/bof/bof-storyboard2-min.png" alt="project storyboard 2">
         </div>
         <div class="flex-item-min">
-          <img src="img/bof/bof-storyboard3-min.png" alt="project storyboard 3">
+          <img id="modal3" class="modalImage" onclick="modalClick(3)" src="img/bof/bof-storyboard3-min.png" alt="project storyboard 3">
         </div>
       </div>
 
@@ -210,7 +210,7 @@
         </div>
 
         <div class="flex-item-min img-display">
-          <img src="img/bof/bof-breakegg-min.gif" alt="breaking egg mechanism gif">
+          <img id="modal4" class="modalImage" onclick="modalClick(4)" src="img/bof/bof-breakegg-min.gif" alt="breaking egg mechanism gif">
         </div>
 
       </div>
@@ -232,7 +232,7 @@
         </div>
 
         <div class="flex-item-min img-display">
-          <img src="img/bof/bof-autospawn-min.gif" alt="auto spawn food mechanism gif">
+          <img id="modal5" class="modalImage" onclick="modalClick(5)" src="img/bof/bof-autospawn-min.gif" alt="auto spawn food mechanism gif">
         </div>
 
       </div>
@@ -408,6 +408,12 @@
       <p>© 2019 Jimmy Chu</p>
     </footer>
     <!-- footer ends here -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
 
     <!-- blinking hint -->
     <div id = "hint">

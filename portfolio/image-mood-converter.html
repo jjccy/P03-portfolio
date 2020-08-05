@@ -76,6 +76,11 @@
           <p>
             Ben Wong <br>Jimmy Chu
           </p>
+
+          <a href="download/ImageMoodConverter.zip" download class="bE-link">
+            Download project
+          </a>
+
         </div>
 
         <div class="description flex-item-min">
@@ -184,10 +189,11 @@
         </div>
 
         <div class="flex-item-min img-display">
-          <img src="img/imc/file1.png" alt="code for import / save files 1">
-          <img src="img/imc/file2.png" alt="code for import / save files 2">
-          <img src="img/imc/file3.png" alt="code for import / save files 3">
+          <img id="modal1" class="modalImage" onclick="modalClick(1)" src="img/imc/file1.png" alt="code for import / save files 1">
+          <img id="modal2" class="modalImage" onclick="modalClick(2)" src="img/imc/file2.png" alt="code for import / save files 2">
+          <img id="modal3" class="modalImage" onclick="modalClick(3)" src="img/imc/file3.png" alt="code for import / save files 3">
         </div>
+
 
       </div>
 
@@ -212,13 +218,13 @@
 
       <div id="horizontal-images" class="flex-box">
         <div class="flex-item-min">
-          <img src="img/imc/mechanism1.png" alt="failer example 1">
+          <img id="modal4" class="modalImage" onclick="modalClick(4)" src="img/imc/mechanism1.png" alt="failer example 1">
         </div>
         <div class="flex-item-min">
-          <img src="img/imc/mechanism2.png" alt="failer example 2">
+          <img id="modal5" class="modalImage" onclick="modalClick(5)" src="img/imc/mechanism2.png" alt="failer example 2">
         </div>
         <div class="flex-item-min">
-          <img src="img/imc/mechanism3.png" alt="failer example 3">
+          <img id="modal6" class="modalImage" onclick="modalClick(6)" src="img/imc/mechanism3.png" alt="failer example 3">
         </div>
       </div>
 
@@ -379,6 +385,12 @@
       <p>© 2019 Jimmy Chu</p>
     </footer>
     <!-- footer ends here -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
 
     <!-- blinking hint -->
     <div id = "hint">
