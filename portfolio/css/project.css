@@ -254,7 +254,9 @@
   display: block;
   white-space: initial;
 
-  color: #EEE;
+  color: white;
+  font-weight: 800;
+  font-size: 1.15rem;
 }
 
 .project-item > .flex-box > .bE-button {
@@ -265,29 +267,35 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 999; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 95%;
-
-  /* position: absolute !important;
+/* model holder (image holder) */
+.modal-holder {
+  position: absolute !important;
   top: 50% !important;
   left: 50% !important;
   margin-right: -50% !important;
-  transform: translate(-50%, -50%) !important; */
+  transform: translate(-50%, -50%) !important;
+
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 90%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  max-width: 100%;
+  max-height: 90vh;
 }
 
 /* modal image */
@@ -307,12 +315,12 @@
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
+  from {-webkit-transform:scale(.3)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
+  from {transform:scale(.3)}
   to {transform:scale(1)}
 }
 

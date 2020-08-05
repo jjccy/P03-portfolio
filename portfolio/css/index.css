@@ -50,10 +50,10 @@ h1 {
   width: 100%;
   margin: auto;
 
-  bottom: 15vh;
-  padding: 0 7vw;
 
-  position: absolute;
+  padding: 0 7vw;
+  padding-top: 60vh;
+
 }
 
 .index-text-holder > .index-title {
@@ -112,6 +112,10 @@ h1 {
   opacity: .8;
 }
 
+#contact-buttom {
+  display: none;
+}
+
 #contact-buttom > .flex-item-min {
   margin-right: .5em;
 }
@@ -161,7 +165,8 @@ h1 {
 
 @media screen and (max-width: 1000px) {
   .index-text-holder {
-    bottom: 3vh;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 
   .index-text-holder > .index-title {
@@ -177,5 +182,10 @@ h1 {
 
     margin-right: 0;
     margin-bottom: 5em;
+  }
+
+  #contact-buttom {
+    display: flex;
+    height: 2em;
   }
 }

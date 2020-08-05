@@ -464,11 +464,16 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
 }
 
 @-webkit-keyframes blink {
-    from {
-        opacity: 0;
+    0% {
+      opacity: 0;
     }
-    to {
-        opacity: .8;
+
+    50% {
+      opacity: .8;
+    }
+
+    100% {
+      opacity: 0;
     }
 }
 
@@ -478,7 +483,7 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   width: 2rem;
   line-height: 2em;
   overflow: hidden;
-  z-index: 999;
+  z-index: 99;
   display: none;
   cursor: pointer;
 
@@ -522,6 +527,8 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   }
 
   .full-img-background {
+    height: auto;
+    min-height: 50vh;
   }
 
   h1 {
@@ -545,8 +552,12 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   .main-nav-link {
   }
 
-  .main-nav-icon {
+  #navgation-bar .main-nav-icon {
     margin: .2em;
     display: none;
+  }
+
+  #back2Top {
+    bottom: -20vh;
   }
 }
