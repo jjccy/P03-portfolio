@@ -54,7 +54,7 @@ p {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 
   object-fit: cover; /* Maintain its aspect ratio */
   object-position: center; /* Center the image within the element */
@@ -522,7 +522,6 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   }
 
   .full-img-background {
-    height: 50vh;
   }
 
   h1 {
