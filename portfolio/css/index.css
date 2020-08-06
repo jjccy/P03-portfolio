@@ -62,18 +62,19 @@ h1 {
   color: #ddd;
   text-decoration: none;
 
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .index-text-holder > .index-title:hover,
 .index-text-holder > .index-title:active,
 .index-text-holder > .index-title:focus{
   color: #fff;
-  text-shadow: .05em .05em .07em #777;
+  font-size: 4.55rem;
+  text-shadow: .05em .05em .1em #555;
 }
 
 .project-description {
