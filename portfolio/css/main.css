@@ -357,6 +357,9 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   display: inline-block;
   position: relative;
 
+  margin: .5em;
+  padding: .5em;
+
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
@@ -368,9 +371,10 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   content: "";
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: .25em;
   left: 0;
-  height: 1pt;
+  margin: 0 .5em;
+  height: 1.5pt;
   background-color: rgba(255,255,255,0);
 
   -webkit-transition: all .15 ease-in-out;
@@ -380,17 +384,17 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   transition: all .15s ease-in-out;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active,
-.main-nav-link:focus {
+.main-nav-link:hover {
   color: white;
-  line-height: 1.5em;
 }
 
-.main-nav-link:hover::after,
-.main-nav-link:active::after,
-.main-nav-link:focus::after {
+.main-nav-link:hover::after {
   background-color: white;
+}
+
+.main-nav-link.visit {
+  background: #ddd;
+  color: black;
 }
 
 .main-nav-icon {
