@@ -1,4 +1,4 @@
-var offset = -100;
+var offset = - (window.innerHeight.toFixed(2) / 7.8);
 
 $(document).ready(function() {
 
@@ -55,21 +55,19 @@ $(window).scroll(function() {
 });
 
 function navChange() {
-  var secondOffset = -300;
+  offset = - (window.innerHeight.toFixed(2) / 7.8);
+  var secondOffset = - (window.innerHeight.toFixed(2) / 2.6);
 
   var about = $("#about").offset().top;
   var product = $("#project").offset().top;
 
   if ($(window).scrollTop() >= (about + offset + secondOffset)) {
-    console.log(1);
     $('#about-link').addClass('visit');
     $('#product-link').removeClass('visit');
   } else if ($(window).scrollTop() >= (product + offset + secondOffset)) {
-    console.log(2);
     $('#about-link').removeClass('visit');
     $('#product-link').addClass('visit');
   } else {
-    console.log(3);
     $('#about-link').removeClass('visit');
     $('#product-link').removeClass('visit');
   }

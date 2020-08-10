@@ -192,6 +192,18 @@ ol.clear-list{
   position: relative;
 }
 
+.noSelect {
+  cursor: default;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
 /* footer */
 footer {
   width: 100%;
@@ -357,7 +369,7 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   display: inline-block;
   position: relative;
 
-  margin: .5em;
+  margin: .5em !important;
   padding: .5em;
 
   -webkit-transition: all .3s ease-in-out;
@@ -374,7 +386,7 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
   bottom: .25em;
   left: 0;
   margin: 0 .5em;
-  height: 1.5pt;
+  height: 1pt;
   background-color: rgba(255,255,255,0);
 
   -webkit-transition: all .15 ease-in-out;
